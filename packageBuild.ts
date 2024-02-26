@@ -2,10 +2,10 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 
 const csharpDevFolder = "bepinex_dev";
-const csharpBuildFolder = "Debug";
+const csharpBuildFolder = "Release";
 
-const lootRankingReaderFolder = "bepinex_dev\\LookRankingDataReader\\bin\\Debug\\net6.0-windows";
-const configEditorFolder = "bepinex_dev\\LTTPConfigEditor\\bin\\Debug";
+const lootRankingReaderFolder = "bepinex_dev\\LookRankingDataReader\\bin\\Release\\net6.0-windows";
+const configEditorFolder = "bepinex_dev\\LTTPConfigEditor\\bin\\Release";
 
 // This is a simple script used to build a mod package. The script will copy necessary files to the build directory
 // and compress the build directory into a zip file that can be easily shared.

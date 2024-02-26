@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -149,7 +149,7 @@ namespace LateToTheParty.Controllers
                 CarExtractNames = ConfigController.GetCarExtractNames();
             }
 
-            foreach (GClass1135 exit in location.exits)
+            foreach (GClass1225 exit in location.exits)
             {
                 if (CarExtractNames.Contains(exit.Name))
                 {
@@ -189,7 +189,7 @@ namespace LateToTheParty.Controllers
 
                 location.EscapeTimeLimit = OriginalSettings[location.Id].EscapeTimeLimit;
 
-                foreach (GClass1135 exit in location.exits)
+                foreach (GClass1225 exit in location.exits)
                 {
                     if (CarExtractNames.Contains(exit.Name))
                     {
@@ -216,7 +216,7 @@ namespace LateToTheParty.Controllers
 
             Models.LocationSettings settings = new Models.LocationSettings(location.EscapeTimeLimit);
             
-            foreach (GClass1135 exit in location.exits)
+            foreach (GClass1225 exit in location.exits)
             {
                 if (CarExtractNames.Contains(exit.Name))
                 {

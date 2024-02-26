@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -93,7 +93,7 @@ namespace LateToTheParty.Controllers
                     throw new InvalidCastException("Could deserialize an empty string to an object of type " + typeof(T).FullName);
                 }
 
-                obj = JsonConvert.DeserializeObject<T>(json, GClass1340.SerializerSettings);
+                obj = JsonConvert.DeserializeObject<T>(json, GClass1448.SerializerSettings);
 
                 return true;
             }

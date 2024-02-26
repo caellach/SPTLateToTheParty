@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -14,11 +14,11 @@ namespace LateToTheParty.Patches
     {
         protected override MethodBase GetTargetMethod()
         {
-            return typeof(QuestClass).GetMethod("SetStatus", BindingFlags.Public | BindingFlags.Instance);
+            return typeof(QuestClass<GInterface384>).GetMethod("SetStatus", BindingFlags.Public | BindingFlags.Instance);
         }
 
         [PatchPrefix]
-        private static void PatchPrefix(QuestClass __instance, EQuestStatus status)
+        private static void PatchPrefix(QuestClass<GInterface384> __instance, EQuestStatus status)
         {
             // Ignore quests that already have this status
             if (__instance.QuestStatus == status)
